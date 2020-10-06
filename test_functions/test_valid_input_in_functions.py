@@ -7,12 +7,12 @@ and invalid_message that validates the test_score, then prints valid input as 'T
 
 """
 import unittest
-from more_functions import validate_input_in_functions as valide_input
+from more_functions import validate_input_in_functions as valid_input
 
 
 class MyTestCase(unittest.TestCase):
     def test_score_input_test_name(self):
-        self.assertEqual("Python1!: 0", valide_input.score_input("Python1!"))
+        self.assertEqual("Python1!: 0", valid_input.score_input("Python1!"))
     """
     def test_score_input_test_score_valid(self):
         self.assertEqual(True, False)

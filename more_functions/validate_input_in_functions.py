@@ -12,8 +12,8 @@ def score_input(test_name, test_score=0, invalid_message="Invalid test score, tr
     """takes a test_name, test_score,
     and invalid_message that validates the test_score,
     then prints valid input as 'Test name: ##'."""
-    print("{}: {}".format(test_name, test_score))
-    return "pass"
+    #print("{}: {}".format(test_name, test_score))
+    return "{}: {}".format(test_name, test_score)
 
 
 if __name__ == '__main__':
