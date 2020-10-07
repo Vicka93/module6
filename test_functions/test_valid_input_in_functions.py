@@ -22,14 +22,15 @@ class MyTestCase(unittest.TestCase):
 
     def test_score_input_test_score_above_range(self):
         self.assertEqual("Invalid test score, try again!", valid_input.score_input("Python4!", 101))
-"""
+
     def test_test_score_non_numeric(self):
-        self.assertEqual(True, False)
+        with self.assertRaises(TypeError):
+            valid_input.score_input("Python5!", "hundred")
 
     def test_score_input_invalid_message(self):
-        self.assertEqual(True, False)
-
-    """
+        self.assertEqual("Not  acceptable score try again!", valid_input.score_input("Python6!", 101,
+                                                                                     "Not  acceptable score "
+                                                                                     "try again!"))
 
 
 if __name__ == '__main__':
