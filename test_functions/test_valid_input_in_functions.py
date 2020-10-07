@@ -13,10 +13,10 @@ from more_functions import validate_input_in_functions as valid_input
 class MyTestCase(unittest.TestCase):
     def test_score_input_test_name(self):
         self.assertEqual("Python1!: 0", valid_input.score_input("Python1!"))
-    """
-    def test_score_input_test_score_valid(self):
-        self.assertEqual(True, False)
 
+    def test_score_input_test_score_valid(self):
+        self.assertEqual("Python2!: 97", valid_input.score_input("Python2!", 97))
+    """
     def test_score_input_test_score_below_range(self):
         self.assertEqual(True, False)
 
